@@ -1,0 +1,28 @@
+[project]
+name = "agentic-workflow-poc"
+version = "0.1.0"
+description = "Agentic AI Workflow Application"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
+    "langchain-core>=0.3.61",
+    "langchain-openai>=0.3.18",
+]
+
+
+
+
+
+[tool.poetry]
+packages = [
+    {include = "src"}
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "pre-commit>=4.2.0",
+]
